@@ -4,7 +4,7 @@ loc = "Arknights: Endfield Model Importer"
 
 [general_settings_force_ultra_high_lod_bias_label]
 src = "Max LOD Bias"
-loc = "最大 LOD 偏移"
+loc = "极高画面细节"
 
 [general_settings_force_ultra_high_lod_bias_tooltip]
 src = """
@@ -12,8 +12,8 @@ src = """
 **Disabled**: Keep **LOD Bias** setting untouched. Select this if **Use All Mips** is enabled below.
 """
 loc = """
-**启用**：将 **LOD 偏移 (LOD Bias)** 设置为 **超高 (Ultra High)**，以强制使用全分辨率的 LOD 纹理。
-**禁用**：保持 **LOD 偏移** 设置不变。如果下方启用了 **使用所有 Mip 级别 (Use All Mips)**，请选择此项。
+**启用**：将 **画面细节 (LOD Bias)** 设置为 **极高 (Ultra High)**，以强制使用全分辨率的 LOD 纹理。
+**禁用**：保持 **画面细节** 设置不变。如果下方启用了 **「全精度纹理模式」**，请选择此项。
 """
 
 [locale_list_conjunction_or]
@@ -48,7 +48,7 @@ loc = """
 
 [general_settings_mesh_lod_offset_label]
 src = "Mesh LOD Offset:"
-loc = "模型 LOD 偏移："
+loc = "模型LOD偏移量："
 
 [general_settings_mesh_lod_offset_tooltip]
 src = """
@@ -70,7 +70,7 @@ loc = """
 
 [general_settings_texture_boost_label]
 src = "Texture Boost:"
-loc = "Ускорение текстур:"
+loc = "纹理流送优先级:"
 
 [general_settings_texture_boost_entry_tooltip]
 src = """
@@ -112,7 +112,7 @@ loc = """
 
 [general_settings_texture_min_boost_label]
 src = "Minimal Boost:"
-loc = "最小加速："
+loc = "纹理流送最低优先级："
 
 [general_settings_texture_min_boost_entry_tooltip]
 src = """
@@ -138,7 +138,7 @@ loc = """
 
 [general_settings_use_all_mips_label]
 src = "Use All Mips"
-loc = "使用所有 Mip 级别"
+loc = "全精度纹理模式"
 
 [general_settings_use_all_mips_tooltip]
 src = """
@@ -186,7 +186,7 @@ loc = """
 
 [general_settings_texture_streaming_limit_pool_checkbox]
 src = "Limit Pool Size To VRAM"
-loc = "限制池大小到显存"
+loc = "限制显存模式"
 
 [general_settings_texture_streaming_limit_pool_checkbox_tooltip]
 src = """
@@ -218,7 +218,7 @@ loc = """
 
 [general_settings_texture_streaming_fixed_pool_size_checkbox]
 src = "Use Fixed Pool Size"
-loc = "使用固定纹理池大小"
+loc = "固定纹理池模式"
 
 [general_settings_texture_streaming_fixed_pool_size_checkbox_tooltip]
 src = """
@@ -247,4 +247,3 @@ loc = """
 
 *应用于 DeviceProfiles.ini 中所有区段的 CVars=r.Streaming.UseFixedPoolSize*
 """
-

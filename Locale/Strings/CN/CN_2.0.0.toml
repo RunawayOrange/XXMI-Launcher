@@ -32,11 +32,11 @@ loc = "*此包是 XXMI 启动器应用程序本身，定义了其功能特性。
 
 [package_description_xxmi_libraries]
 src = "*XXMI Libraries package is custom 3dmigoto build fiddling with data between GPU and a game process.*"
-loc = "*XXMI 库包是自定义的 3dmigoto 构建，用于处理 GPU 和游戏进程间的数据交互。*"
+loc = "*XXMI 库包是自定义的 3DMigoto 构建，用于处理 GPU 和游戏进程间的数据交互。*"
 
 [package_description_model_importer]
 src = "*Model Importer package offers a set of API functions required for mods to work in given game.*"
-loc = "*模型导入器包提供了一套 API 函数，用于在指定游戏中运行模组。*"
+loc = "*模组加载器包提供了一套 API 函数，用于在指定游戏中运行模组。*"
 
 [package_release_notes]
 src = """
@@ -120,7 +120,7 @@ If game window takes more than {start_timeout} seconds to appear, adjust Timeout
 loc = """
 检测游戏进程{process_name}失败！
 
-如果游戏崩溃了，请在常规设置中尝试调整XXMI延迟，或者清空模组和ShaderFixes文件夹。
+如果游戏崩溃了，请在「通用设置」中尝试调整XXMI延迟，或者清空 Mods 和 ShaderFixes 文件夹内所有文件重试。
 
 如果游戏窗口出现时间超过{start_timeout}秒，请在启动器设置中调整超时时间。
 """
@@ -150,7 +150,7 @@ XXMI安装已损坏！
 
 详情：{error_text}
 
-您是否希望自动恢复XXMI？
+是否自动恢复XXMI？
 """
 
 [status_ensuring_game_closed]
@@ -183,7 +183,7 @@ Please check Advanced Settings → Inject Libraries.
 loc = """
 无法注入额外库 {dll_path}：
 文件未找到！
-请检查高级设置 → 注入库。
+请检查「高级设置」 → 「注入库」。
 """
 
 [error_model_importer_unknown_command]
@@ -225,7 +225,7 @@ Please reinstall the launcher to another location.
 """
 loc = """
 
-启动器必须安装在游戏文件夹外！
+XXMI启动器必须安装在游戏文件夹之外！
 
 请将启动器重新安装到其他位置。
 """
@@ -239,7 +239,7 @@ Please chose another location for Settings > {importer} > {importer} Folder.
 """
 loc = """
 
-{importer} 文件夹必须位于游戏文件夹外！
+{importer} 文件夹必须位于游戏文件夹之外！
 
 请为设置 > {importer} > {importer} 文件夹选择其他位置。
 """
@@ -279,7 +279,7 @@ Would you like to restore {importer} automatically?
 loc = """
 {importer} 安装已损坏！
 详细信息：缺少关键文件：{file_name}！
-您想要自动恢复 {importer} 吗？
+是否自动恢复 {importer} ？
 """
 
 [model_importer_missing_critical_file]
@@ -301,7 +301,7 @@ Would you like to disable following duplicates automatically (recommended)?
 loc = """
 您的 {importer} 安装已包含 Mods 文件夹中存在的一些库！
 
-您想要自动禁用以下重复项（推荐）吗？
+是否自动禁用以下重复项（推荐）？
 
 {duplicates}
 """
@@ -321,7 +321,7 @@ loc = """
 
 这是可能导致故障和崩溃的重复文件。
 
-您想要删除它吗？
+是否删除？
 """
 
 [error_cannot_start_with_d3dx_ini_in_mods]
@@ -357,7 +357,7 @@ Please configure it manually with Game Folder option of General Settings.
 loc = """
 游戏安装自动检测失败！
 
-请在常规设置中通过游戏文件夹选项手动配置。
+请在「通用设置」中通过游戏文件夹选项手动配置。
 """
 
 [message_text_game_detected_single]
@@ -373,7 +373,7 @@ loc = """
 
 {game_folder}
 
-请检查这是否是所需的游戏文件夹，或在常规设置中更改它。
+请检查这是否是所需的游戏文件夹，或在「通用设置」中更改它。
 """
 
 [message_text_game_detected_multiple]
@@ -386,7 +386,7 @@ Select desired Game Folder from the list below or set it in General Settings:
 loc = """
 检测到多个游戏安装：
 
-从下面列表中选择所需的游戏文件夹，或在常规设置中设置：
+从下面列表中选择所需的游戏文件夹，或在「通用设置」中设置：
 
 """
 
@@ -399,7 +399,7 @@ Please set it with Game Folder option of General Settings.
 loc = """
 游戏安装文件夹未配置！
 
-请在常规设置中通过游戏文件夹选项设置。
+请在「通用设置」中通过游戏文件夹选项设置。
 """
 
 [status_autodetecting_game]
@@ -481,7 +481,7 @@ Please disable `Configure Game Settings` in launcher's General Settings and chec
 """
 loc = """
 配置ZZMI游戏内设置失败！
-请在启动器通用设置中禁用`配置游戏设置`并检查游戏内设置：
+请在启动器通用设置中禁用「配置游戏画质设置」并检查游戏内设置：
 * 画面 > `角色品质` 必须为`高`。
 * 画面 > `高精度角色动画` 必须为`关闭`。
 
@@ -510,7 +510,7 @@ loc = """
 {error_text}
 
 如果以上都无法解决：
-1. 在启动器的`通用设置`中禁用`配置游戏设置`
+1. 在启动器的`通用设置`中禁用「配置游戏画质设置」
 2. 手动配置游戏内`图形设置`：
 * 图像 > `动态角色分辨率` 必须为`关闭`。
 """
@@ -627,7 +627,7 @@ Invalid Wuthering Waves installation detected for Steam:
 Please run game file repair via Steam or fix it manually.
 """
 loc = """
-检测到Steam的鸣潮安装无效：
+检测到Steam的《鸣潮》安装无效：
 {game_path}
 
 包含 {folder_name} 的 {exe_name} 文件夹必须直接放置在：
@@ -650,7 +650,7 @@ loc = "正在配置游戏内设置..."
 
 [message_title_wounded_effect_detected]
 src = "Wounded Effect Detected"
-loc = "检测到受伤效果"
+loc = "检测到受伤表现"
 
 [message_text_wounded_effect_detected]
 src = """
@@ -661,11 +661,11 @@ Click `Disable` to turn it Off and ensure proper rendering of modded textures.
 Click `Keep Enabled` if you never get hit or use Injured Effect Remover tool.
 """
 loc = """
-看起来游戏设置中启用了受伤效果。
+看起来游戏设置中启用了受伤表现。
 大多数模组不支持此功能，在受到几次攻击后纹理会出现问题。
 
 点击`禁用`关闭它并确保模组纹理正确渲染。
-如果您从不受伤或使用受伤效果移除工具，请点击`保持启用`。
+如果您从不受伤或使用受伤表现移除工具，请点击`保持启用`。
 """
 
 [error_wwmi_fps_unlock_failed]
@@ -692,7 +692,7 @@ Please disable `Configure Game Settings` in launcher's General Settings and chec
 """
 loc = """
 配置WWMI游戏内设置失败！
-请在启动器通用设置中禁用`配置游戏设置`并检查游戏内设置：
+请在启动器通用设置中禁用「配置游戏画质设置」并检查游戏内设置：
 * 画面 > `画面品质` 必须为`极致`。
 
 {error_text}
@@ -853,7 +853,7 @@ Please rename all folders from the path using only English letters:
 {dll_path}
 """
 loc = """
-请使用纯英文字母重命名路径中的所有文件夹：
+请将路径下的所有文件夹重命名，且仅使用英文字母：
 {dll_path}
 """
 
@@ -1168,7 +1168,7 @@ loc = "加载默认"
 
 [error_unknown_model_importer]
 src = "Unknown model importer {importer}!"
-loc = "未知的模型导入器 {importer}！"
+loc = "未知的模组加载器 {importer}！"
 
 [error_model_importer_auto_select_failed]
 src = """
@@ -1184,11 +1184,11 @@ loc = """
 
 [error_unknown_model_importer_arg]
 src = "Unknown model importer supplied as command line arg `--xxmi={arg_xxmi}`!"
-loc = "命令行参数 `--xxmi={arg_xxmi}` 提供了未知的模型导入器！"
+loc = "命令行参数 `--xxmi={arg_xxmi}` 提供了未知的模组加载器！"
 
 [error_unknown_model_importer_setting]
 src = "Unknown model importer `{importer}` supplied with `active_importer` setting!"
-loc = "`active_importer` 设置提供了未知的模型导入器 `{importer}`！"
+loc = "`active_importer` 设置提供了未知的模组加载器 `{importer}`！"
 
 [error_version_list_fetch_failed]
 src = """
@@ -1415,27 +1415,27 @@ loc = "安装"
 # Top Bar UI Messages
 [top_bar_xxmi_button_tooltip]
 src = "Manage Model Importers"
-loc = "管理模型导入器"
+loc = "管理模组加载器"
 
 [top_bar_wwmi_button_tooltip]
 src = "Wuthering Waves Model Importer"
-loc = "鸣潮模型导入器"
+loc = "鸣潮模组加载器"
 
 [top_bar_zzmi_button_tooltip]
 src = "Zenless Zone Zero Model Importer"
-loc = "绝区零模型导入器"
+loc = "绝区零模组加载器"
 
 [top_bar_srmi_button_tooltip]
 src = "Honkai: Star Rail Model Importer"
-loc = "崩坏：星穹铁道模型导入器"
+loc = "崩坏：星穹铁道模组加载器"
 
 [top_bar_gimi_button_tooltip]
 src = "Genshin Impact Model Importer"
-loc = "原神模型导入器"
+loc = "原神模组加载器"
 
 [top_bar_himi_button_tooltip]
 src = "Honkai Impact Model Importer"
-loc = "崩坏3模型导入器"
+loc = "崩坏Ⅲ模组加载器"
 
 [top_bar_gamebanana_button_tooltip]
 src = "{importer} GameBanana"
@@ -1475,8 +1475,8 @@ Usage of 3-rd party 3dmigoto DLLs is allowed.
 Make sure to use ones only from a trusted source!
 """
 loc = """
-允许使用第三方3dmigoto DLL。
-确保只使用来自可信来源的DLL！
+允许使用第三方3DMigoto DLL文件。
+确保只使用来自可靠来源的 dll文件！
 """
 
 # Tool Bar UI Messages
@@ -1552,7 +1552,7 @@ loc = "正在将{asset}写入磁盘..."
 
 [bottom_bar_moving_file]
 src = "Moving {asset}..."
-loc = "正在移动{asset}..."
+loc = "正在迁移{asset}..."
 
 [bottom_bar_unpacking]
 src = "Unpacking {asset}..."
@@ -1616,7 +1616,7 @@ loc = "启动行为："
 
 [launcher_settings_auto_close_checkbox]
 src = "Close Launcher After Game Start"
-loc = "游戏启动后关闭启动器"
+loc = "游戏启动后关闭XXMI"
 
 [launcher_settings_auto_close_checkbox_tooltip]
 src = """
@@ -1624,8 +1624,8 @@ Enabled: Launcher will close itself once the game has started and 3dmigoto injec
 Disabled: Launcher will keep itself running.
 """
 loc = """
-启用：游戏启动且3dmigoto注入确认后，启动器将自动关闭。
-禁用：启动器将保持运行。
+启用：游戏启动且3DMigoto注入确认后，XXMI启动器将自动关闭。
+禁用：XXNI启动器将保持运行。
 """
 
 [launcher_settings_timeout_label]
@@ -1639,9 +1639,9 @@ Game process will be considered as crashed once timeout is met.
 Default value is **30**.
 """
 loc = """
-控制启动器在游戏启动后等待游戏窗口显示的时间。
-超时后游戏进程将被视为崩溃。
-默认值为**30**。
+控制启动器在游戏启动后等待游戏窗口显示的时间(秒)。
+游戏进程未在设置时间内启动，将被视为崩溃。
+默认值为**30秒**。
 """
 
 [launcher_settings_update_policy_label]
@@ -1659,7 +1659,7 @@ Disabled: Use special [▲] button next to [Start] button to Download and Instal
 """
 loc = """
 启用：启动器和{importer}更新将自动下载和安装。
-禁用：使用[启动]按钮旁边的特殊[▲]按钮手动下载和安装更新。
+禁用：使用「启动」按钮旁边的特殊[▲]按钮手动下载和安装更新。
 """
 
 [launcher_settings_update_channel_label]
@@ -1695,7 +1695,7 @@ loc = """
 选择启动器GUI主题。
 警告！`默认`主题将被启动器更新覆盖！
 制作自定义主题：
-1. 在`主题`文件夹中创建`默认`文件夹的副本。
+1. 在`Themes`文件夹中创建`Default`文件夹的副本。
 2. 重命名副本为你希望在设置中显示的名称。
 3. 编辑或替换任何图像（有效扩展名：webp、jpeg、png、jpg）。
 """
@@ -1738,7 +1738,7 @@ To create new token:
 loc = """
 你在**GitHub**上的**个人访问令牌**（例如`ghp_f7gy3A4eQ97jfy2983mfZu2Hy93yf2P3d798`）。
 可以解决通常在公共代理中出现的`GitHub API请求限制`错误。
-完全免费，只需要GitHub注册。
+完全免费，只需要注册并登录 GitHub。
 创建新令牌：
 1. 点击`[?]`按钮打开令牌创建网页。
 2. 使用`生成新令牌（经典）`按钮。
@@ -1765,7 +1765,7 @@ src = """
 loc = """
 <font color=\"red\">⚠ 仅在你信任代理或其他破坏SSL的工具时才禁用。⚠</font>
 **启用**：验证GitHub下载的SSL证书以保持安全。
-**禁用**：允许易受中间人攻击的不安全连接。
+**禁用**：允许易受第三方攻击的不安全连接。
 """
 
 [launcher_settings_proxy_enable_checkbox]
@@ -1794,7 +1794,7 @@ src = """
 **SOCKS5**: Newer and less secure, but excels at bypassing firewalls.
 """
 loc = """
-**HTTPS**：经典的代理协议。提供最佳安全性。
+**HTTPS**：经典的代理协议，提供最佳安全性。
 **SOCKS5**：较新且安全性较低，但在绕过防火墙方面表现出色。
 """
 
@@ -1830,7 +1830,7 @@ loc = "代理端口（例如`1080`）。"
 
 [launcher_settings_proxy_credentials_checkbox]
 src = "Proxy Requires Password"
-loc = "代理需要密码"
+loc = "代理所需密码"
 
 [launcher_settings_proxy_credentials_checkbox_tooltip]
 src = """
@@ -1865,7 +1865,7 @@ loc = "语言："
 # General Settings Frame
 [general_settings_game_folder_label]
 src = "Game Folder:"
-loc = "游戏文件夹："
+loc = "游戏路径："
 
 [general_settings_game_folder_error_label]
 src = "Failed to detect Game Folder!"
@@ -1877,7 +1877,7 @@ loc = "浏览..."
 
 [general_settings_detect_game_folder_button_tooltip]
 src = "Try to automatically detect existing installation folders."
-loc = "尝试自动检测现有安装文件夹。"
+loc = "尝试自动检测现有游戏安装文件夹。"
 
 [general_settings_launch_options_about_button]
 src = "About..."
@@ -1903,15 +1903,15 @@ loc = "启动方式："
 
 [general_settings_start_method_native]
 src = "Native"
-loc = "Native"
+loc = "原生 (Native)"
 
 [general_settings_start_method_shell]
 src = "Shell"
-loc = "Shell"
+loc = "加壳 (Shell)"
 
 [general_settings_start_method_manual]
 src = "Manual"
-loc = "Manual"
+loc = "手动 (Manual)"
 
 [general_settings_start_method_option_menu_tooltip]
 src = """
@@ -1921,7 +1921,7 @@ src = """
 """
 loc = """
 **原生**：直接创建游戏进程。通常是最可靠的方式。
-**Shell**：通过系统控制台启动游戏进程。如果原生方式有问题可以尝试此选项。
+**加壳**：通过系统控制台启动游戏进程。如果原生方式有问题可以尝试此选项。
 **手动**：按下**启动**按钮时不启动游戏。等待用户手动启动游戏（{timeout}秒超时）。
 """
 
@@ -1935,7 +1935,7 @@ Delay in milliseconds for how long injected XXMI DLL (3dmigoto) must wait before
 {tooltip_footer}
 """
 loc = """
-注入的 XXMI DLL (3dmigoto) 在初始化前需要等待的毫秒数。
+注入的 XXMI DLL (3DMigoto) 在初始化前需要等待的毫秒数。
 {tooltip_footer}
 """
 
@@ -1947,17 +1947,17 @@ src = """<font color="red">⚠ Wuthering Waves crashes on launch with wrong dela
 - **150**: Minimal known value to work along with ReShade.
 - **50**: Minimal known value to work.
 - **1000+**: Some users need really huge delays."""
-loc = """<font color="red">⚠ 鸣潮在延迟设置错误时会崩溃！⚠</font>
+loc = """<font color="red">⚠ 《鸣潮》在延迟设置错误时会崩溃！⚠</font>
 <font color="#8B8000">⚠ 如果默认值不起作用，请尝试增加或减少数值直到游戏不再崩溃。⚠</font>
-## 鸣潮 2.4 已知可用值：
-- **500**：默认值，适用于大多数用户。
-- **150**：与 ReShade 一起使用时的最小已知值。
-- **50**：可用的最小已知值。
-- **1000+**：某些用户需要非常大的延迟值。"""
+## 《鸣潮》 2.4版本 已知可用值：
+- **500毫秒**：默认值，适用于大多数用户。
+- **150毫秒**：与 ReShade 一起使用时的最小已知值。
+- **50毫秒**：可用的最小已知值。
+- **5000+毫秒**：某些硬件配置需要非常大的延迟值。"""
 
 [general_settings_xxmi_delay_entry_tooltip_footer_general]
 src = "If game crashes with no mods, try to increase it. Start with steps of 50 and increase them as you go."
-loc = "如果游戏在没有模组的情况下崩溃，请尝试增加此值。从50开始逐步增加。"
+loc = "如果游戏在没有安装任何模组的情况下崩溃，请尝试增加此值。以500毫秒开始步进增加延迟数值。"
 
 [general_settings_process_priority_label]
 src = "Process Priority:"
@@ -1965,23 +1965,23 @@ loc = "进程优先级："
 
 [general_settings_process_priority_low]
 src = "Low"
-loc = "Low"
+loc = "低"
 
 [general_settings_process_priority_below_normal]
 src = "Below Normal"
-loc = "Below Normal"
+loc = "较低"
 
 [general_settings_process_priority_normal]
 src = "Normal"
-loc = "Normal"
+loc = "正常"
 
 [general_settings_process_priority_above_normal]
 src = "Above Normal"
-loc = "Above Normal"
+loc = "较高"
 
 [general_settings_process_priority_high]
 src = "High"
-loc = "High"
+loc = "高"
 
 [general_settings_process_priority_realtime]
 src = "Realtime"
@@ -1997,11 +1997,11 @@ loc = """
 
 [general_settings_auto_config_label]
 src = "Auto Config:"
-loc = "自动配置："
+loc = "游戏设置："
 
 [general_settings_configure_game_checkbox]
 src = "Configure Game Settings"
-loc = "配置游戏设置"
+loc = "配置游戏画质设置"
 
 [general_settings_configure_game_tooltip_gimi]
 src = """
@@ -2034,11 +2034,11 @@ src = """
 <font color=\"red\">⚠ Mods will not work with wrong settings! ⚠</font>
 """
 loc = """
-**启用**：游戏启动前确保WWMI兼容的游戏内**图形设置**：
+**启用**：游戏启动前确保WWMI兼容的游戏内**「图形质量预设」**：
 
-- `图形质量：质量`
+- 「图形质量预设：均衡」
 
-**禁用**：游戏内设置不会受影响。
+**禁用**：游戏内「图形质量预设：自定义」不会受影响。
 
 <font color=\"red\">⚠ 设置错误时模组将无法工作！⚠</font>
 """
@@ -2075,7 +2075,7 @@ loc = "在默认文本编辑器中打开 **{file_name}** 进行手动调整。"
 
 [general_settings_tweaks_label]
 src = "Tweaks:"
-loc = "调整项："
+loc = "调整选项："
 
 [general_settings_unlock_fps_checkbox_force]
 src = "Force 120 FPS"
@@ -2089,10 +2089,10 @@ Please do note that with some hardware game refuses to go 120 FPS even with this
 **Disabled**: Has no effect on FPS settings, use in-game settings to undo already forced 120 FPS.
 """
 loc = """
-此选项允许在非官方支持的设备上将FPS限制设为120。
-请注意，某些硬件即使使用此调整也可能无法达到120 FPS。
+此选项允许在非官方支持的设备上将FPS突破限制设为 120 fps。
+请注意，性能较差的 CPU 和 GPU 即使使用此调整也可能无法达到 120 fps。
 **启用**：游戏启动时在`LocalStorage.db`中将`CustomFrameRate`设为`120`。
-**禁用**：对FPS设置无影响，使用游戏内设置撤销已强制的120 FPS。
+**禁用**：对FPS设置无影响，使用游戏内设置撤销已强制的120 fps。
 """
 
 [general_settings_unlock_fps_checkbox_tooltip_srmi]
@@ -2145,19 +2145,19 @@ loc = """
 
 [general_settings_window_mode_windowed]
 src = "Windowed"
-loc = "Windowed"
+loc = "窗口化"
 
 [general_settings_window_mode_borderless]
 src = "Borderless"
-loc = "Borderless"
+loc = "无边框"
 
 [general_settings_window_mode_fullscreen]
 src = "Fullscreen"
-loc = "Fullscreen"
+loc = "全屏"
 
 [general_settings_window_mode_exclusive_fullscreen]
 src = "Exclusive Fullscreen"
-loc = "Exclusive Fullscreen"
+loc = "独立全屏"
 
 [general_settings_window_mode_option_menu_tooltip]
 src = "Game window mode when started with FPS Unlocker."
@@ -2176,16 +2176,16 @@ List of tweaks:
 {tweaks}
 """
 loc = """
-**启用**：游戏启动时向`Engine.ini`的`[SystemSettings]`部分添加性能调整列表。
-**禁用**：不向`Engine.ini`添加调整。已添加的需要手动移除。
+**启用**：游戏启动时，向`Engine.ini`的`[SystemSettings]`部分添加性能调整命令行。
+**禁用**：不向`Engine.ini`添加调整，已添加命令行需手动编辑移除。
 
-调整列表：
+调整清单：
 {tweaks}
 """
 
 [general_settings_enable_hdr_checkbox]
 src = "Enable HDR"
-loc = "启用 HDR"
+loc = "启用高动态范围"
 
 [general_settings_enable_hdr_checkbox_tooltip]
 src = """
@@ -2193,17 +2193,17 @@ src = """
 **Enabled**: Turn HDR On. Creates HDR registry record each time before the game launch.
 **Disabled**: Turn HDR Off. No extra action required, game auto-removes HDR registry record on launch."""
 loc = """
-**警告**！您的显示器必须支持 HDR，且 Windows 显示设置中必须启用`使用 HDR`！
-**启用**：开启 HDR。每次游戏启动前创建 HDR 注册表记录。
-**禁用**：关闭 HDR。无需额外操作，游戏启动时会自动移除 HDR 注册表记录。"""
+**警告**！您的显示器必须支持高动态范围，且 Windows 显示设置中必须启用`使用 HDR`！
+**启用**：开启高动态范围，每次游戏启动前创建 HDR 注册表记录。
+**禁用**：关闭高动态范围，无需额外操作，游戏启动时会自动移除 HDR 注册表记录。"""
 
 [error_no_data_available_short]
 src = "N/A"
-loc = "N/A"
+loc = "不可用"
 
 [general_settings_disable_wounded_effect_checkbox]
 src = "Disable Wounded Effect"
-loc = "禁用受伤效果"
+loc = "禁用受伤表现"
 
 [general_settings_disable_wounded_effect_checkbox_tooltip]
 src = """
@@ -2214,12 +2214,12 @@ Most mods do not support this effect, so textures usually break after few hits t
 loc = """
 大多数模组不支持此效果，所以在受到几次伤害后纹理通常会损坏。
 **启用**：关闭此效果。确保正确渲染模组纹理。
-**禁用**：开启此效果。如果您使用了`受伤效果移除器`工具，请选择此项。
+**禁用**：开启此效果。如果您使用了`受伤效果移除器`工具编辑过mod.ini，请选择此项。
 """
 
 [general_settings_texture_boost_label]
 src = "Texture Boost:"
-loc = "纹理加速："
+loc = "纹理流送优先级:"
 
 [general_settings_texture_boost_entry_tooltip]
 src = """
@@ -2241,7 +2241,7 @@ loc = """
 在 **Engine.ini** 中设置 **r.Streaming.Boost** 的值。
 微调此值可以防止切换到模组角色时出现短暂的纹理故障。
 对于低数值，可以尝试使用小数（例如 `1.1` 或 `2.5`）。
-## 鸣潮 2.4 的参考值：
+## 《鸣潮》 2.4 的参考值：
 - **2.75**：RTX 4090。
 - **30.0**：RTX 3070。
 """
@@ -2275,7 +2275,7 @@ loc = """
 
 [advanced_settings_security_label]
 src = "Security:"
-loc = "安全："
+loc = "安全性："
 
 [advanced_settings_unsafe_mode_checkbox]
 src = "Unsafe Mode"
@@ -2288,8 +2288,8 @@ Disabled: Disallow 3-rd party 3dmigoto dlls.
 Note: If 3-rd party d3d11.dll does not support running from nested directories, it will fail to load.
 """
 loc = """
-启用：允许第三方3dmigoto动态链接库。
-禁用：禁止第三方3dmigoto动态链接库。
+启用：允许第三方3DMigoto动态链接库。
+禁用：禁止第三方3DMigoto动态链接库。
 注意：如果第三方d3d11.dll不支持从嵌套目录运行，将无法加载。
 """
 
@@ -2341,7 +2341,7 @@ Example (equivalent for command internally used by launcher to start GI via FPS 
 loc = """
 按下启动按钮时运行的Windows控制台命令，替代默认游戏可执行文件启动。
 提示：如果只想更改注入方法，请将此字段留空。
-警告！此命令还会覆盖常规设置中的`启动选项`。
+警告！此命令还会覆盖「通用设置」中的`启动选项`。
 注意：如果想用另一个自定义可执行文件启动游戏可执行文件，请在此处进行。
 示例（相当于启动器内部用于通过FPS解锁器启动GI的命令）：
 `start /d \"C:\\Games\\XXMI Launcher\\Resources\\Packages\\GI-FPS-Unlocker\" unlockfps_nc.exe`
@@ -2355,15 +2355,15 @@ Defines the way of 3dmigoto injection into the game process started via Custom L
 * Bypass: Skip 3dmigoto injection and process only Inject Libraries field.
 """
 loc = """
-定义通过自定义启动方式启动的游戏进程中3dmigoto注入的方式。
-* 注入：使用WriteProcessMemory，更可靠但需要直接内存访问。
-* 钩子：使用SetWindowsHookEx，可靠性较低，但对反作弊系统的影响可能较小。
-* 绕过：跳过3dmigoto注入，仅处理注入库字段。
+定义通过自定义启动方式启动的游戏进程中3DMigoto注入的方式。
+* 注入(Inject)：使用WriteProcessMemory，更可靠但需要直接内存访问。
+* 钩子(Hook)：使用SetWindowsHookEx，可靠性较低，但对反作弊系统的影响可能较小。
+* 绕过(Bypass)：跳过3DMigoto注入，仅处理注入库字段。
 """
 
 [advanced_settings_run_post_load_checkbox]
 src = "Run Post-Load:"
-loc = "运行加载后："
+loc = "运行后期加载："
 
 [advanced_settings_run_post_load_checkbox_tooltip]
 src = """
@@ -2372,7 +2372,7 @@ Note: If something needs to be done after 3dmigoto injection, do it here.
 """
 loc = """
 将d3d11.dll钩子注入到启动的游戏可执行文件后执行的Windows控制台命令。
-注意：如果需要在3dmigoto注入后执行某些操作，请在此处进行。
+注意：如果需要在3DMigoto注入后执行某些操作，请在此处进行。
 """
 
 [advanced_settings_run_post_load_wait_checkbox_tooltip]
@@ -2400,11 +2400,11 @@ loc = """
 # Importer Settings Frame
 [importer_settings_shader_hunting_label]
 src = "Shader Hunting:"
-loc = "着色器调试："
+loc = "着色器捕获："
 
 [importer_settings_enable_hunting_checkbox]
 src = "Enable Hunting"
-loc = "启用调试"
+loc = "启用捕获"
 
 [importer_settings_enable_hunting_checkbox_tooltip]
 src = """
@@ -2422,7 +2422,7 @@ loc = """
 
 [importer_settings_dump_shaders_checkbox]
 src = "Dump Shaders"
-loc = "导出着色器"
+loc = "提取着色器"
 
 [importer_settings_dump_shaders_checkbox_tooltip]
 src = """
@@ -2444,7 +2444,7 @@ loc = "错误处理："
 
 [importer_settings_mute_warnings_checkbox]
 src = "Mute Warnings"
-loc = "静音警告"
+loc = "静默警告"
 
 [importer_settings_mute_warnings_checkbox_tooltip]
 src = """
@@ -2518,11 +2518,11 @@ loc = """
 
 [importer_settings_ini_protection_label]
 src = "Ini Protection:"
-loc = "Ini保护："
+loc = "捕获设置："
 
 [importer_settings_enforce_rendering_checkbox]
 src = "Enforce Rendering Settings"
-loc = "强制渲染设置"
+loc = "强制执行哈希识别与动态追踪"
 
 [importer_settings_enforce_rendering_checkbox_tooltip]
 src = """
@@ -2532,10 +2532,14 @@ Enabled: Ensure {importer}-compatible [Rendering] section settings.
 Disabled: Settings above will not be forced into d3dx.ini.
 """
 loc = """
-启用：确保{importer}兼容的[渲染]部分设置。
-* [d3dx.ini]: texture_hash = {texture_hash}
-* [d3dx.ini]: track_texture_updates = {track_texture_updates}
-禁用：以上设置不会被强制写入d3dx.ini。
+启用：确保与 {importer} 兼容的[渲染]部分设置。
+❖ [d3dx.ini]: **texture_hash = {texture_hash} 哈希识别** 
+▸ = 1 开启哈希计算:3DMigoto 会为游戏中加载的每一个纹理生成一个唯一的 Hash 标识，制作 Mod 时必开
+▸ = 0 关闭哈希计算:3DMigoto 不再对纹理进行识别，直接跳过。
+❖ [d3dx.ini]: **track_texture_updates = {track_texture_updates} 动态跟踪** 
+▸ = 1 开启实时跟踪:如果游戏引擎修改了某个贴图的数据，3DMigoto 会立刻发现并重新计算 Hash 
+▸ = 0 关闭实时跟踪: 3DMigoto只在贴图第一次被创建时计算一次 Hash，之后不管贴图内容怎么变，它都不再管了 
+禁用：以上哈希识别和动态跟踪设置不会被强制写入d3dx.ini配置中。
 """
 
 # Settings Interface Translations (for settings_tabs_frame.py)
@@ -2545,7 +2549,7 @@ loc = "设置"
 
 [settings_tab_general]
 src = "General"
-loc = "通用"
+loc = "通用设置"
 
 [settings_tab_launcher]
 src = "Launcher"
@@ -2553,15 +2557,15 @@ loc = "启动器"
 
 [settings_tab_importer]
 src = "MI"
-loc = "模型导入器"
+loc = "模组加载器"
 
 [settings_tab_advanced]
 src = "Advanced"
-loc = "高级"
+loc = "高级设置"
 
 [general_settings_texture_streaming_pool_size_label]
 src = "Texture Pool Size:"
-loc = "纹理池大小："
+loc = "纹理流送纹理池容量："
 
 [general_settings_texture_streaming_pool_size_entry_tooltip]
 src = """
@@ -2574,18 +2578,18 @@ src = """
 
 *Applied to ConsoleVariables → r.Streaming.PoolSize value in Engine.ini*"""
 loc = """
-## 控制游戏可以使用的显存量：
+## 控制游戏可以使用的显存量（单位：MB）：
 
 * 设为 **0** **（默认值）** 进行**自动控制**（基于可用显存）。
-    ✅ 足够大的池可以消除模组纹理在首次加载后的加载延迟。
+    ✅ 足够大的纹理池可以消除模组纹理在首次加载后的加载延迟。
 
-* 设置特定值（如4096）以精确管理显存。
+* 设置指定值（如 4096 MB）以精确管理显存。
 
 *应用于Engine.ini中的ConsoleVariables → r.Streaming.PoolSize值*"""
 
 [general_settings_texture_streaming_limit_pool_checkbox]
 src = "Limit Pool Size To VRAM"
-loc = "限制池大小到显存"
+loc = "限制显存模式"
 
 [general_settings_texture_streaming_limit_pool_checkbox_tooltip]
 src = """
@@ -2645,7 +2649,7 @@ loc = """
 
 [general_settings_engine_settings_label]
 src = "Engine Settings:"
-loc = "引擎设置："
+loc = "UE4 设置："
 
 # HIMI Package Messages
 
@@ -2658,7 +2662,7 @@ Please start the game without FPS tweak, change FPS to any value to create the r
 Note: Tweak is supported only for the Global client and will not work for CN.
 """
 loc = """
-未找到崩坏3注册表项！
+未找到《崩坏Ⅲ》注册表项！
 
 请在不使用FPS调整的情况下启动游戏，更改FPS值以创建记录，然后重试。
 
@@ -2672,7 +2676,7 @@ Graphics Settings record is not found in Honkai Impact 3rd registry!
 Please start the game without FPS tweak, change FPS to any value to create the record and try again.
 """
 loc = """
-在崩坏3注册表中未找到图形设置记录！
+在《崩坏Ⅲ》注册表中未找到图形设置记录！
 
 请在不使用FPS调整的情况下启动游戏，更改FPS值以创建记录，然后重试。
 """
